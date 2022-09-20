@@ -1,28 +1,15 @@
 'use strict';
 
-for (let num = 1; num < 6; num++) {
-    console.log(num);
+
+function calcSumm (numOne = 1, numTwo = 3) {
+    console.log(`Переменная numOne: ${numOne}`);
+    console.log(`Перемення numTwo: ${numTwo}`);
+
+    let numSumm = numOne + numTwo;
+
+    console.log(`Сумма: ${numSumm}`);
 }
 
-let num = 0;
-while (num < 3) {
-    console.log(`Число: ${num}`);
-    num++
-}
-
-
-for (let num = 0; num < 3; num++) {
-    console.log(`Чиcло: ${num}`);
-}
-
-
-firstFor: for (let num = 0; num < 2; num++) {
-    for (let size = 0; size < 3; size++) {
-        console.log(size);
-        if (size == 1) {
-            break firstFor
-        }
-    }
-}
-
+calcSumm();
+ 
 
