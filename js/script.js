@@ -1,52 +1,31 @@
 'use strict';
 
-let num = 50;
-
-// while (num < 58) {
-//     console.log(num);
-//     num++;
-// }
-
-// do {
-//     console.log(num);
-//     num++; 
-// }
-// while (num < 55);
-
-for (let i = 1; i < 8; i++){
-    if (i === 6)
-    console.log(i); 
+function showFirstMessage (text) {
+    console.log(text)
 }
 
-if (1 == '1') {
-    console.log('Истина!');
-} else {
-    console.log('Ложь');
+showFirstMessage ("Hello zaebal");
+function calc ( a, b) {
+    return (a + b);
 }
 
-let message = (92 > '11' && 2 < 100) ?  'Истина' : 'Ложь'
-console.log(message)
+console.log(calc(4, 5))
+console.log(calc(7, 6))
 
-if (0) {
-    console.log('Ложь')
-} else {
-    console.log('Истина')
+function ret () {
+    let num = 50;
+    return num;
 }
 
-for (let num = 0; num < 5; num++) {
-    console.log(num);
-}
+const anotherNum = ret();
+console.log(anotherNum)
 
-let i = 0;
-while (i < 3) {
-    alert( i );
-    i++;
-}
 
-for (let i = 0; i > -4; i--) { // выведет 0, затем 1, затем 2
-    console.log(i);
-  }
+const logger = function() {
+    console.log('hello');
+};
 
+logger();
 
 
 
