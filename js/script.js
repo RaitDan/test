@@ -1,31 +1,28 @@
 'use strict';
 
-function showFirstMessage (text) {
-    console.log(text)
+for (let num = 1; num < 6; num++) {
+    console.log(num);
 }
 
-showFirstMessage ("Hello zaebal");
-function calc ( a, b) {
-    return (a + b);
+let num = 0;
+while (num < 3) {
+    console.log(`Число: ${num}`);
+    num++
 }
 
-console.log(calc(4, 5))
-console.log(calc(7, 6))
 
-function ret () {
-    let num = 50;
-    return num;
+for (let num = 0; num < 3; num++) {
+    console.log(`Чиcло: ${num}`);
 }
 
-const anotherNum = ret();
-console.log(anotherNum)
 
-
-const logger = function() {
-    console.log('hello');
-};
-
-logger();
-
+firstFor: for (let num = 0; num < 2; num++) {
+    for (let size = 0; size < 3; size++) {
+        console.log(size);
+        if (size == 1) {
+            break firstFor
+        }
+    }
+}
 
 
