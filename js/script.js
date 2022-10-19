@@ -1,37 +1,28 @@
 "use strict";
 
-let users = ['Ваня', 'Иштван',];
+const textElement = document.querySelector('.lesson__text');
 
-users.push('Оля');
-console.log(users);
+// const textElementContent = textElement.innerHTML;
 
-users.splice(1, 1, 'Петя');
-console.log(users);
+// textElement.innerHTML = ` <p>${textElementContent}</p> Кури <span class="green">шмаль</span> и развивайся!`;
 
-let oneUsers = users.splice(0, 1);
-console.log(oneUsers);
-console.log(users);
+// console.log(textElement.innerHTML);
+// console.log(textElementContent);
 
-users.splice(0, 0, 'Маша', 'Паша');
-console.log(users);
+// const textElementContent = textElement.outerHTML;
 
+// textElement.outerHTML = `<p>Я хочу курить 
+// <span class="green">шмаль</span> и пить <span class="yellow">сок</span></p>`
+// console.log(textElementContent);
 
-let arr = ['Ваня', 'Иштван', 'Оля',];
+const newElement = document.createElement('div');
 
-let arrTwo = arr.splice(1, 1);
+newElement.innerHTML = `Кури <span class="green">шмаль</span>,
+ туси и <span class="yellow">развивай свой мозг</span> на будущее`;
+ console.log(newElement); 
 
-console.log(arr);
-console.log(arrTwo);
-
-let str = 'Ваня,Иштван,Оля';
-
-let newStr = str.split(',');
-
-console.log(newStr);
-
-
-
-
+ textElement.append(newElement);
+ 
 
 
 
